@@ -5,21 +5,23 @@ import { Button } from "./ui/button";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between p-2 max-w-6xl mx-auto">
+    <div className="flex items-center justify-between p-3 mx-auto shadow-sm">
       <div className="font-semibold">Sunny|Gloom</div>
-      <SignedOut>
-        <Button
-          asChild
-          variant="secondary"
-          className="hover:shadow-md active:scale-90 duration-150"
-        >
-          <SignInButton>Log In</SignInButton>
-        </Button>
-      </SignedOut>
+      <div>
+        <SignedOut>
+          <Button
+            asChild
+            variant="secondary"
+            className="hover:shadow-md active:scale-90 duration-150"
+          >
+            <SignInButton>Log In</SignInButton>
+          </Button>
+        </SignedOut>
 
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </div>
     </div>
   );
 }
