@@ -2,12 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
+import { ModeToggle } from "./ModeToggle";
 
 function Header() {
   return (
     <div className="flex items-center justify-between p-3 mx-auto shadow-sm">
       <div className="font-semibold">Sunny|Gloom</div>
-      <div>
+      <div className="flex items-center space-x-4">
         <SignedOut>
           <Button
             asChild
@@ -21,6 +22,7 @@ function Header() {
         <SignedIn>
           <UserButton />
         </SignedIn>
+        <ModeToggle />
       </div>
     </div>
   );
