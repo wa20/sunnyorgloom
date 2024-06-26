@@ -1,3 +1,5 @@
+import PostSection from "@/components/PostSection";
+import UserInfo from "@/components/UserInfo";
 import React from "react";
 
 function SunnyOrGloom() {
@@ -19,16 +21,16 @@ function SunnyOrGloom() {
     // </div>
 
 
-    <div className="grid grid-rows-8 md:grid-cols-8 mt-5 sm:px-5 h-screen">
-      <section className="row-span-2 md:inline md:col-span-2  bg-red-400">
-        profile section
+    <div className="grid grid-rows-8 md:grid-cols-8 sm:px-5w">
+      <section className="row-span-2 md:inline md:col-span-2 mt-10">
+        <UserInfo />
       </section>
 
-      <section className="row-span-6 md:col-span-6 xl:col-span-4 xl:max-w-xl mx-auto w-full bg-orange-100">
-        post section
+      <section className="row-span-6 md:col-span-6 xl:col-span-4 xl:max-w-xl mx-auto w-full mt-10">
+        <PostSection />
       </section>
 
-      <section className="hidden xl:inline justify-center col-span-2">
+      <section className="hidden xl:inline justify-center col-span-2 mt-10">
         widget section
       </section>
     </div>

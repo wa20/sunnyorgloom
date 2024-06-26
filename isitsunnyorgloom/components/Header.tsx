@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
-import { ModeToggle } from "./ModeToggle";
 
 function Header() {
   return (
@@ -22,7 +21,6 @@ function Header() {
         <SignedIn>
           <UserButton />
         </SignedIn>
-        <ModeToggle />
       </div>
     </div>
   );

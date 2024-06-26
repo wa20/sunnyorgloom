@@ -21,15 +21,13 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+
           <Header />
-          <div className="max-w-6xl mx-auto">{children}</div>
-          </ThemeProvider>
+          <div className="bg-backgroundLight flex-1 w-full">
+            <main className="max-w-6xl mx-auto">
+              {children}
+              </main>
+            </div>
         </body>
       </html>
     </ClerkProvider>
