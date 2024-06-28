@@ -20,19 +20,20 @@ function SunnyOrGloom() {
     //   </section>
     // </div>
 
+    <div className="bg-[#F4F2ED]">
+      <div className="grid grid-rows-8 md:grid-cols-8 sm:px-5w max-w-6xl mx-auto">
+        <section className="row-span-2 md:inline md:col-span-2 mt-10">
+          <UserInfo />
+        </section>
 
-    <div className="grid grid-rows-8 md:grid-cols-8 sm:px-5w">
-      <section className="row-span-2 md:inline md:col-span-2 mt-10">
-        <UserInfo />
-      </section>
+        <section className="row-span-6 md:col-span-6 xl:col-span-4 xl:max-w-xl mx-auto w-full mt-10">
+          <PostSection />
+        </section>
 
-      <section className="row-span-6 md:col-span-6 xl:col-span-4 xl:max-w-xl mx-auto w-full mt-10">
-        <PostSection />
-      </section>
-
-      <section className="hidden xl:inline justify-center col-span-2 mt-10">
-        widget section
-      </section>
+        <section className="hidden xl:inline justify-center col-span-2 mt-10">
+          widget section
+        </section>
+      </div>
     </div>
   );
 }
