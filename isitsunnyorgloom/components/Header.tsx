@@ -5,8 +5,8 @@ import { Button } from "./ui/button";
 
 function Header() {
   return (
-    <div className="flex items-center justify-between p-3 mx-auto shadow-sm">
-      <div className="font-semibold">Sunny|Gloom</div>
+    <header className="flex items-center justify-between p-7 mx-auto shadow-lg sticky top-0 bg-[#013B94]">
+      <div className="font-semibold text-white">Sunny|Gloom</div>
       <div className="flex items-center space-x-4">
         <SignedOut>
           <Button
@@ -22,7 +22,7 @@ function Header() {
           <UserButton />
         </SignedIn>
       </div>
-    </div>
+    </header>
   );
 }
 
